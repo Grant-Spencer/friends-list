@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'friends-list';
+  newFriend = '';
+  isDisabled = true;
+ // create an array named friends and populate with some friends
+  friends = ["Sean", "Ron", "Julie", "Phil", "Grant"];
+
+  addFriend() {
+    console.log(this.newFriend);
+  }
 }
